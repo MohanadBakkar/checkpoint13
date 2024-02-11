@@ -9,7 +9,7 @@ const Description = ({ movies }) => {
     return (
       <div>
         <div>{movie.description}</div>
-        <iframe width="600" height="300" autoplay= "1" />
+        <iframe src={movie.trailerLink} width="600" height="300" autoplay= "1" />
         <div>
         <Link to="/">Back Home</Link>
         </div>
