@@ -1,13 +1,16 @@
 import React from 'react';
+import Video from './Video';
 
-const MovieCard = ({ movie }) => {
+const MovieCard = ({ title, description, posterURL, rating, trailerLink }) => {
   return (
     <div className="movie-card">
-      <div className="movie-details">
-        <h3>{movie.title}</h3>
-        <p>{movie.description}</p>
-        <p>Rating: {movie.rating}</p>
-        <img src={movie.posterURL} alt={movie.title} width={400} height= {300} />
+      
+      <div className="movie-info">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <p>Rating: {rating}</p>
+        <img src={posterURL} alt={title} />
+        <Video link={trailerLink} />
       </div>
     </div>
   );
