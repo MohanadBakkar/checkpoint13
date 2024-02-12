@@ -15,7 +15,7 @@ const Home = ({ movies }) => {
 
 
 const App = () => {
-  // Sample movie data
+  
   const movies = [
     {
       movieId: 1,
@@ -46,7 +46,7 @@ const App = () => {
       title: 'Inception',
       description: 'A mind-bending thriller.',
       posterURL: 'https://assets.cdn.moviepilot.de/files/1855b0d706236cc4b7bde6a5cd5ae2e0909cdf0c927e696a5b45cb77c520/limit/1024/2000/inception-19.jpg',
-      rating: 4.5,
+      rating: 8.2,
       trailerLink: 'https://www.imdb.com/video/vi4194944793/?playlistId=tt13321244&ref_=tt_pr_ov_vi'
     },
     {

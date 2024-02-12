@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom';
 
 const Description = ({ movies }) => {
-    const params = useParams();
+    const params = useParams(); //params = {"movieId": 1}
     const movie = movies.find(movie => movie.movieId === parseInt(params.movieId));
   
     return (
